@@ -1,8 +1,8 @@
-const puppeteer = require("puppeteer");
-const ora = require("ora");
-const colors = require("colors");
+const puppeteer = require('puppeteer');
+const ora = require('ora');
+const colors = require('colors');
 
-const prefix = "[browser]";
+const prefix = '[browser]';
 
 const spinner = ora(`${prefix} start browser test...`).start();
 
@@ -15,13 +15,13 @@ const spinner = ora(`${prefix} start browser test...`).start();
 
   await page.goto(testPath);
 
-  await page.waitFor(".suite");
+  await page.waitFor('.suite');
 
   // pass
-  const passNode = await page.$$(".pass");
+  const passNode = await page.$$('.pass');
 
   // fail
-  const failNode = await page.$$(".fail");
+  const failNode = await page.$$('.fail');
 
   spinner.stop();
 
@@ -33,7 +33,7 @@ const spinner = ora(`${prefix} start browser test...`).start();
     console.log(
       prefix,
       `失败 ${failNode.length} 项`.red,
-      "具体见:",
+      '具体见:',
       `${pngPath}`.underline
     );
     await browser.close();

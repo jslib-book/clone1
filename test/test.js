@@ -1,11 +1,11 @@
-var expect = require("expect.js");
-var clone = require("../src/index.js").clone;
+var expect = require('expect.js');
+var clone = require('../src/index.js').clone;
 
-describe("function clone", function () {
-  describe("param data", function () {
-    it("正确用例", function () {
+describe('function clone', function () {
+  describe('param data', function () {
+    it('正确用例', function () {
       // 基本数据类型
-      expect(clone("abc")).to.equal("abc");
+      expect(clone('abc')).to.equal('abc');
 
       // 数组
       var arr = [1, [2]];
@@ -20,7 +20,7 @@ describe("function clone", function () {
       expect(cloneObj).to.eql(obj);
     });
 
-    it("边界值用例", function () {
+    it('边界值用例', function () {
       expect(clone(1)).to.equal(undefined);
 
       expect(clone(undefined)).to.equal(undefined);

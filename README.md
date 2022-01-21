@@ -13,7 +13,7 @@ $ npm install --save clone
 如果你是 node 环境
 
 ```js
-var { clone } = require("clone");
+var { clone } = require('clone');
 
 clone({ a: 1 });
 ```
@@ -21,7 +21,7 @@ clone({ a: 1 });
 如果你是 webpack 等环境
 
 ```js
-import { clone } from "clone";
+import { clone } from 'clone';
 
 clone({ a: 1 });
 ```
