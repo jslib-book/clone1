@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 const ora = require('ora');
+// eslint-disable-next-line no-unused-vars
 const colors = require('colors');
 
 const prefix = '[browser]';
@@ -34,7 +35,7 @@ const spinner = ora(`${prefix} start browser test...`).start();
       prefix,
       `失败 ${failNode.length} 项`.red,
       '具体见:',
-      `${pngPath}`.underline
+      `${testPath}`.underline
     );
     await browser.close();
     process.exit(1);

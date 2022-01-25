@@ -21,7 +21,7 @@ describe('function clone', function () {
     });
 
     it('边界值用例', function () {
-      expect(clone(1)).to.equal(undefined);
+      expect(clone(1)).to.equal(1);
 
       expect(clone(undefined)).to.equal(undefined);
 

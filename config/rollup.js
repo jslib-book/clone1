@@ -10,7 +10,7 @@ var banner = `/*!
  */
 `;
 
-function getCompiler(opt) {
+function getCompiler() {
   return babel({
     babelrc: false,
     presets: [
