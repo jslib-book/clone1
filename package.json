@@ -15,6 +15,7 @@
     "test:puppeteer": "node test/browser/puppeteer.js",
     "lint": "eslint src config test",
     "lint:prettier": "prettier --check .",
+    "lint:commit": "commitlint --from=HEAD~1",
     "prepare": "husky install",
     "ci": "commit",
     "cz": "git-cz",
