@@ -1,4 +1,4 @@
-### 功能介绍
+### 功能介绍 ![example workflow](https://github.com/jslib-book/clone1/actions/workflows/ci.yml/badge.svg)
 
 实现 JavaScript 引用对象的深拷贝功能
 
