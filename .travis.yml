@@ -6,7 +6,9 @@ before_script:
 before_install:
   - echo install yarn
 install:
-  - echo yarn install
   - npm install
 script:
+  - npm run lint:prettier
+  - npm run lint
+  - npm run build
   - npm test
