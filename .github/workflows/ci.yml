@@ -26,7 +26,7 @@ jobs:
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
-          node-version: 'c'
+          node-version: '16.x'
           cache: 'npm'
       - run: npm ci
       - run: npm run lint:prettier
